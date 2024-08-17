@@ -1,9 +1,12 @@
 var prompt = function(texto) { return lines.shift();};
 
-var tempo = parseInt(prompt("Insira o tempo em horas:"));
-var velocidade = parseInt(prompt("Insira a velocidade media em km/h:"));
+var tempo = parseInt(prompt("Tempo em dias:"));
 
-var distancia = velocidade * tempo;
-var gasolina = distancia/12;
+var anos = Math.trunc(tempo/365);
+var rano = tempo%365;
+var meses = Math.trunc(rano/30);
+var dias = rano%30;
 
-console.log(gasolina.toFixed(3));
+console.log(anos + " ano(s)");
+console.log(meses + " mes(es)");
+console.log(dias + " dia(s)");
