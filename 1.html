@@ -1,24 +1,15 @@
 <script>
-
     var [a,b,c] = prompt("Insira 3 valores:").split(" ");
-    a = parseInt(a);
-    b = parseInt(b);
-    c = parseInt(c);
+    a = parseFloat(a);
+    b = parseFloat(b);
+    c = parseFloat(c);
 
-    var array = [a,b,c];
+    var array = [a,b,c].sort((x,y)=> y-x);
+    a = array[0];
+    b = array[1];
+    c = array[2];
 
-    var organizado = array.slice();
-    array.sort();
-
-    console.log(array[0]);
-    console.log(array[1]);
-    console.log(array[2]);
-
-    console.log("");
-
-    console.log(organizado[0]);
-    console.log(organizado[1]);
-    console.log(organizado[2]);
-
-
+    console.log(a);
+    console.log(b);
+    console.log(c);
 </script>
