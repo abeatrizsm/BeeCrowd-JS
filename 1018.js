@@ -18,7 +18,7 @@ var cin = Math.trunc(rdez/5);
 var rcin = rdez%5;
 
 var dois = Math.trunc(rcin/2);
-var rdois = rcin%2;
+var rdois = rcin%2; 3
 
 var um = rdois;
 
