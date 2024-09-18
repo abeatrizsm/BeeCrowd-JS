@@ -1,15 +1,12 @@
 var prompt = function(texto) { return lines.shift();};
 
-let maior = 0;
-let posicao = 0;
+let n = parseInt(prompt(""));
 
-for (let i = 0; i < 100; i++) {
-    let n = parseInt(prompt("Insira um número:"));
-    if (n > maior) {
-        maior = n;
-        posicao = i + 1;
-    }
+for(let i = 1; i <= n; i++){
+    let [a, b, c] = prompt("").split(' ');
+    a = parseFloat(a);
+    b = parseFloat(b);
+    c = parseFloat(c);
+   
+    console.log(((a*2 + b*3 + c*5)/10).toFixed(1));
 }
-
-console.log(maior);
-console.log(posicao);
