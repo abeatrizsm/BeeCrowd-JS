@@ -1,7 +1,17 @@
 var prompt = function(texto) { return lines.shift();};
 
-for(var i = 1; i<=100; i++){
-    if(i%2===0){
-        console.log(i);
+let cont = 0;
+let media = 0;
+
+for (let i = 0; i < 6; i++) {
+    let n = parseFloat(prompt("Insira o valor " + (i + 1 + ":")));
+    if(n > 0){
+        media += n;
+        cont++;
     }
 }
+
+media = media/cont;
+
+console.log(cont + " valores positivos");
+console.log(media.toFixed(1));
