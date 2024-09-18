@@ -1,7 +1,15 @@
 var prompt = function(texto) { return lines.shift();};
 
-for(var i = 1; i<=100; i++){
-    if(i%2===0){
-        console.log(i);
+let maior = 0;
+let posicao = 0;
+
+for (let i = 0; i < 100; i++) {
+    let n = parseInt(prompt("Insira um número:"));
+    if (n > maior) {
+        maior = n;
+        posicao = i + 1;
     }
 }
+
+console.log(maior);
+console.log(posicao);
