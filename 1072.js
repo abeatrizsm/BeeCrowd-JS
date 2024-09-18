@@ -2,7 +2,7 @@ let prompt = function(texto) { return lines.shift();};
 
 let dentro = 0;
 let fora = 0;
-let n = parseInt(prompt("Insira o número de casos: "));
+let n = parseInt(prompt("Insira o número de casos:"));
 
 for( let i = 1 ; i<=n; i++){
     let x = parseInt(prompt("Insira o valor " + (i+1) + ": "));
