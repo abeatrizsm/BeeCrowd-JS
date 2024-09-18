@@ -1,7 +1,11 @@
 var prompt = function(texto) { return lines.shift();};
 
-for(var i = 1; i<=100; i++){
-    if(i%2===0){
-        console.log(i);
+let cont = 0;
+
+for(var i = 0; i<5; i++){
+    let n = parseInt(prompt("Insira o valor " + (i+1) + ":"));
+    if(n % 2 === 0){
+        cont++;
     }
 }
+console.log(cont + " valores pares");
