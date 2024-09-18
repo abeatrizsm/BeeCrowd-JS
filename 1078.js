@@ -1,7 +1,8 @@
 var prompt = function(texto) { return lines.shift();};
 
-for(var i = 1; i<=100; i++){
-    if(i%2===0){
-        console.log(i);
-    }
+let n = parseInt(prompt("Insira um número: "));
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i} x ${n} = ${i * n}`)
+
 }
