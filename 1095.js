@@ -1,7 +1,8 @@
 var prompt = function(texto) { return lines.shift();};
 
-for(var i = 1; i<=100; i++){
-    if(i%2===0){
-        console.log(i);
-    }
+let i = 1;
+
+for( let j = 60; j >= 0; j = j - 5){
+    console.log("I=" + i + " J=" + j);
+    i = i + 3;
 }
